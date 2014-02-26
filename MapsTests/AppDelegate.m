@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MapsViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +16,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+	
+	UINavigationController* mainController = [[UINavigationController alloc] initWithRootViewController:[[MapsViewController alloc] init]];
+	self.window.rootViewController = mainController;
+	
     [self.window makeKeyAndVisible];
     return YES;
 }

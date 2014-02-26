@@ -19,6 +19,14 @@
 		ADE0BE4F18BE5B0200FBBBBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE0BE3718BE5B0200FBBBBD /* UIKit.framework */; };
 		ADE0BE5718BE5B0200FBBBBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADE0BE5518BE5B0200FBBBBD /* InfoPlist.strings */; };
 		ADE0BE5918BE5B0200FBBBBD /* MapsTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE0BE5818BE5B0200FBBBBD /* MapsTestsTests.m */; };
+		ADE0BE6718BE5B2D00FBBBBD /* MapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE0BE6618BE5B2D00FBBBBD /* MapsViewController.m */; };
+		ADE0BE6918BE5B3E00FBBBBD /* MapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE0BE6818BE5B3E00FBBBBD /* MapsViewController.xib */; };
+		ADE0BE6B18BE5C1600FBBBBD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE0BE6A18BE5C1600FBBBBD /* MapKit.framework */; };
+		ADE0BE6D18BE5EA100FBBBBD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE0BE6C18BE5EA100FBBBBD /* CoreLocation.framework */; };
+		ADE0BE7418BE75F900FBBBBD /* RoutesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE0BE7318BE75F900FBBBBD /* RoutesViewController.xib */; };
+		ADE0BE7718BE763C00FBBBBD /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE0BE7618BE763C00FBBBBD /* RoutesViewController.m */; };
+		ADE0BE7D18BE8C4700FBBBBD /* RouteDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE0BE7C18BE8C4700FBBBBD /* RouteDescriptionViewController.m */; };
+		ADE0BE7F18BE8C5E00FBBBBD /* RouteDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE0BE7E18BE8C5E00FBBBBD /* RouteDescriptionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,17 @@
 		ADE0BE5418BE5B0200FBBBBD /* MapsTestsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapsTestsTests-Info.plist"; sourceTree = "<group>"; };
 		ADE0BE5618BE5B0200FBBBBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ADE0BE5818BE5B0200FBBBBD /* MapsTestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapsTestsTests.m; sourceTree = "<group>"; };
+		ADE0BE6518BE5B2D00FBBBBD /* MapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapsViewController.h; path = Controller/MapsViewController.h; sourceTree = "<group>"; };
+		ADE0BE6618BE5B2D00FBBBBD /* MapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapsViewController.m; path = Controller/MapsViewController.m; sourceTree = "<group>"; };
+		ADE0BE6818BE5B3E00FBBBBD /* MapsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapsViewController.xib; path = View/MapsViewController.xib; sourceTree = "<group>"; };
+		ADE0BE6A18BE5C1600FBBBBD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		ADE0BE6C18BE5EA100FBBBBD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ADE0BE7318BE75F900FBBBBD /* RoutesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RoutesViewController.xib; path = View/RoutesViewController.xib; sourceTree = "<group>"; };
+		ADE0BE7518BE763C00FBBBBD /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutesViewController.h; path = Controller/RoutesViewController.h; sourceTree = "<group>"; };
+		ADE0BE7618BE763C00FBBBBD /* RoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoutesViewController.m; path = Controller/RoutesViewController.m; sourceTree = "<group>"; };
+		ADE0BE7B18BE8C4700FBBBBD /* RouteDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RouteDescriptionViewController.h; path = Controller/RouteDescriptionViewController.h; sourceTree = "<group>"; };
+		ADE0BE7C18BE8C4700FBBBBD /* RouteDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RouteDescriptionViewController.m; path = Controller/RouteDescriptionViewController.m; sourceTree = "<group>"; };
+		ADE0BE7E18BE8C5E00FBBBBD /* RouteDescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RouteDescriptionViewController.xib; path = View/RouteDescriptionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE0BE6D18BE5EA100FBBBBD /* CoreLocation.framework in Frameworks */,
+				ADE0BE6B18BE5C1600FBBBBD /* MapKit.framework in Frameworks */,
 				ADE0BE3618BE5B0200FBBBBD /* CoreGraphics.framework in Frameworks */,
 				ADE0BE3818BE5B0200FBBBBD /* UIKit.framework in Frameworks */,
 				ADE0BE3418BE5B0200FBBBBD /* Foundation.framework in Frameworks */,
@@ -96,6 +117,8 @@
 		ADE0BE3218BE5B0200FBBBBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADE0BE6C18BE5EA100FBBBBD /* CoreLocation.framework */,
+				ADE0BE6A18BE5C1600FBBBBD /* MapKit.framework */,
 				ADE0BE3318BE5B0200FBBBBD /* Foundation.framework */,
 				ADE0BE3518BE5B0200FBBBBD /* CoreGraphics.framework */,
 				ADE0BE3718BE5B0200FBBBBD /* UIKit.framework */,
@@ -107,6 +130,9 @@
 		ADE0BE3918BE5B0200FBBBBD /* MapsTests */ = {
 			isa = PBXGroup;
 			children = (
+				ADE0BE6418BE5B1100FBBBBD /* Controller */,
+				ADE0BE6318BE5B0C00FBBBBD /* View */,
+				ADE0BE6218BE5B0800FBBBBD /* Model */,
 				ADE0BE4218BE5B0200FBBBBD /* AppDelegate.h */,
 				ADE0BE4318BE5B0200FBBBBD /* AppDelegate.m */,
 				ADE0BE4518BE5B0200FBBBBD /* Images.xcassets */,
@@ -142,6 +168,36 @@
 				ADE0BE5518BE5B0200FBBBBD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADE0BE6218BE5B0800FBBBBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ADE0BE6318BE5B0C00FBBBBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADE0BE6818BE5B3E00FBBBBD /* MapsViewController.xib */,
+				ADE0BE7318BE75F900FBBBBD /* RoutesViewController.xib */,
+				ADE0BE7E18BE8C5E00FBBBBD /* RouteDescriptionViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		ADE0BE6418BE5B1100FBBBBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADE0BE6518BE5B2D00FBBBBD /* MapsViewController.h */,
+				ADE0BE6618BE5B2D00FBBBBD /* MapsViewController.m */,
+				ADE0BE7518BE763C00FBBBBD /* RoutesViewController.h */,
+				ADE0BE7618BE763C00FBBBBD /* RoutesViewController.m */,
+				ADE0BE7B18BE8C4700FBBBBD /* RouteDescriptionViewController.h */,
+				ADE0BE7C18BE8C4700FBBBBD /* RouteDescriptionViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE0BE3E18BE5B0200FBBBBD /* InfoPlist.strings in Resources */,
+				ADE0BE6918BE5B3E00FBBBBD /* MapsViewController.xib in Resources */,
+				ADE0BE7418BE75F900FBBBBD /* RoutesViewController.xib in Resources */,
 				ADE0BE4618BE5B0200FBBBBD /* Images.xcassets in Resources */,
+				ADE0BE7F18BE8C5E00FBBBBD /* RouteDescriptionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE0BE7D18BE8C4700FBBBBD /* RouteDescriptionViewController.m in Sources */,
 				ADE0BE4418BE5B0200FBBBBD /* AppDelegate.m in Sources */,
 				ADE0BE4018BE5B0200FBBBBD /* main.m in Sources */,
+				ADE0BE7718BE763C00FBBBBD /* RoutesViewController.m in Sources */,
+				ADE0BE6718BE5B2D00FBBBBD /* MapsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +425,7 @@
 				GCC_PREFIX_HEADER = "MapsTests/MapsTests-Prefix.pch";
 				INFOPLIST_FILE = "MapsTests/MapsTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -376,6 +439,7 @@
 				GCC_PREFIX_HEADER = "MapsTests/MapsTests-Prefix.pch";
 				INFOPLIST_FILE = "MapsTests/MapsTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
