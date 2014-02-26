@@ -182,6 +182,12 @@
 		NSLog(@"response = %@",response);
         NSArray *arrRoutes = [response routes];
 		self.routes = [response routes];
+		
+		if(self.mapView.overlays && self.mapView.overlays.count > 0)
+		{
+			[self.mapView removeOverlays:self.mapView.overlays];
+		}
+		
         [arrRoutes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
 			
             MKRoute *route = obj;
