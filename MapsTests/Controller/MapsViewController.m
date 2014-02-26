@@ -179,7 +179,6 @@
 	
 	MKDirections *directions = [[MKDirections alloc] initWithRequest:request];
 	[directions calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
-		NSLog(@"response = %@",response);
         NSArray *arrRoutes = [response routes];
 		self.routes = [response routes];
 		
@@ -189,24 +188,7 @@
 		}
 		
         [arrRoutes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-			
-            MKRoute *route = obj;
-			
-            [self.mapView addOverlay:route.polyline];
-			
-            NSLog(@"Rout Name : %@",route.name);
-            NSLog(@"Total Distance (in Meters) :%f",route.distance);
-			
-            NSArray *steps = [route steps];
-			route = nil;
-			
-            NSLog(@"Total Steps : %d",[steps count]);
-			
-            [steps enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                NSLog(@"Rout Instruction : %@",[obj instructions]);
-                NSLog(@"Rout Distance : %f",[obj distance]);
-            }];
-			steps = nil;
+            [self.mapView addOverlay:((MKRoute*)obj).polyline];
         }];
 		arrRoutes = nil;
 	}];
